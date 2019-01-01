@@ -1,0 +1,647 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>数据库 · 运维笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="junwei's notes">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mysql.html" />
+    
+    
+    <link rel="prev" href="../web/tomcat.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.junwei.xin/book" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../os.html">
+            
+                <a href="../../os.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    操作系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../win/windows.html">
+            
+                <a href="../../win/windows.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../linux.html">
+            
+                <a href="../linux.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Linux/Unix
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../cluster/cluster.html">
+            
+                <a href="../cluster/cluster.html">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    集群
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../cluster/ha.html">
+            
+                <a href="../cluster/ha.html">
+            
+                    
+                        <b>1.2.2.1.1.</b>
+                    
+                    Ha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../cluster/lvs.html">
+            
+                <a href="../cluster/lvs.html">
+            
+                    
+                        <b>1.2.2.1.2.</b>
+                    
+                    LVS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.3" data-path="../cluster/nginx.html">
+            
+                <a href="../cluster/nginx.html">
+            
+                    
+                        <b>1.2.2.1.3.</b>
+                    
+                    Nginx负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../web/web.html">
+            
+                <a href="../web/web.html">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    Web服务器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../web/apache.html">
+            
+                <a href="../web/apache.html">
+            
+                    
+                        <b>1.2.2.2.1.</b>
+                    
+                    Apache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../web/nginx.html">
+            
+                <a href="../web/nginx.html">
+            
+                    
+                        <b>1.2.2.2.2.</b>
+                    
+                    Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="../web/tomcat.html">
+            
+                <a href="../web/tomcat.html">
+            
+                    
+                        <b>1.2.2.2.3.</b>
+                    
+                    Tomcat
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.3" data-path="data.html">
+            
+                <a href="data.html">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                        <b>1.2.2.3.1.</b>
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="radis.html">
+            
+                <a href="radis.html">
+            
+                    
+                        <b>1.2.2.3.2.</b>
+                    
+                    Radis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../monitor/monitor.html">
+            
+                <a href="../monitor/monitor.html">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    监控系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="../monitor/Cacti.html">
+            
+                <a href="../monitor/Cacti.html">
+            
+                    
+                        <b>1.2.2.4.1.</b>
+                    
+                    Cacti
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="../monitor/nagios.html">
+            
+                <a href="../monitor/nagios.html">
+            
+                    
+                        <b>1.2.2.4.2.</b>
+                    
+                    Nagios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.3" data-path="../monitor/zabbix.html">
+            
+                <a href="../monitor/zabbix.html">
+            
+                    
+                        <b>1.2.2.4.3.</b>
+                    
+                    Zabbix
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../automation/automation.html">
+            
+                <a href="../automation/automation.html">
+            
+                    
+                        <b>1.2.2.5.</b>
+                    
+                    自动化脚本
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.5.1" data-path="../automation/shell.html">
+            
+                <a href="../automation/shell.html">
+            
+                    
+                        <b>1.2.2.5.1.</b>
+                    
+                    Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.2" data-path="../automation/python.html">
+            
+                <a href="../automation/python.html">
+            
+                    
+                        <b>1.2.2.5.2.</b>
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../virtualization/virtualization.html">
+            
+                <a href="../../../virtualization/virtualization.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    虚拟化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >数据库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x6570;&#x636E;&#x5E93;">&#x6570;&#x636E;&#x5E93;</a></li></ul></div><a href="#&#x6570;&#x636E;&#x5E93;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6570;&#x636E;&#x5E93;"><a name="&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x5E93;</h1>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; junwei 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-01-01 20:44:18
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../web/tomcat.html" class="navigation navigation-prev " aria-label="Previous page: Tomcat">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mysql.html" class="navigation navigation-next " aria-label="Next page: Mysql">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"数据库","level":"1.2.2.3","depth":3,"next":{"title":"Mysql","level":"1.2.2.3.1","depth":4,"path":"OS/linux/data/mysql.md","ref":"OS/linux/data/mysql.md","articles":[]},"previous":{"title":"Tomcat","level":"1.2.2.2.3","depth":4,"path":"OS/linux/web/tomcat.md","ref":"OS/linux/web/tomcat.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","anchor-navigation-ex@0.1.8","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © junwei 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"junwei's notes","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"运维笔记","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://www.junwei.xin/book"}},"gitbook":"3.2.3","description":"记录、发现、分享"},"file":{"path":"OS/linux/data/data.md","mtime":"2019-01-01T12:44:18.875Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-01T13:40:16.861Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
